@@ -6,33 +6,33 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>253</height>
+    <width>353</width>
+    <height>206</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="tasks_widget" native="true">
+  <widget class="QWidget" name="cpanel_com_setup_widget" native="true">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>20</y>
+     <x>30</x>
+     <y>30</y>
      <width>311</width>
-     <height>211</height>
+     <height>151</height>
     </rect>
    </property>
-   <widget class="QFrame" name="tasks">
+   <widget class="QFrame" name="cpanel_com_setup">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
       <width>311</width>
-      <height>211</height>
+      <height>151</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QFrame#tasks{
+     <string notr="true">QFrame#cpanel_com_setup{
 background-color:	rgba(22,22,22,255);
 }</string>
     </property>
@@ -42,7 +42,7 @@ background-color:	rgba(22,22,22,255);
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="label_tasks">
+    <widget class="QLabel" name="cpanel_label_cameras">
      <property name="geometry">
       <rect>
        <x>80</x>
@@ -56,56 +56,43 @@ background-color:	rgba(22,22,22,255);
 font-size: 14px;</string>
      </property>
      <property name="text">
-      <string>Tasks</string>
+      <string>Communication Setup</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QFrame" name="frame_tasks">
+    <widget class="QFrame" name="cpanel_frame_com_setup">
      <property name="geometry">
       <rect>
        <x>0</x>
        <y>30</y>
        <width>311</width>
-       <height>181</height>
+       <height>121</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">QFrame#frame_tasks {
+      <string notr="true">QFrame#cpanel_frame_com_setup {
 background-color: rgba(34,34,34,255);
 border-radius: 20px;
 }
 QPushButton {
-background-color: rgba(66,66,66,255);
-border-radius: 16px;
+background-color: rgba(63,67,66,255);
+border-radius: 21px;
 color: rgb(255, 255, 255);
 font-size: 13px;
 width: 100px;
-height: 32px;
+height: 42px;
 }
 QPushButton:hover{
-background-color: rgba(66,66,66, 200);
+background-color: rgba(17, 120, 223, 200);
 }
 QPushButton:pressed{
-background-color: rgba(66,66,66, 128)
+background-color: rgba(17, 120, 223, 128)
 }
 QLabel{
 color: White;
 font-size: 13px;
-}
-QComboBox{
-background-color:rgba(53,53,53,255);
-color: White;
-height:32px;
-widht: 100px;
-border: 0px;
-}
-QComboBox:hover{
-background-color: rgba(53,53,53, 150);
-}
-QComboBox::drop-down{
-background:rgba(53,53,53,255)
 }</string>
      </property>
      <property name="frameShape">
@@ -118,33 +105,17 @@ background:rgba(53,53,53,255)
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>18</y>
+        <y>12</y>
         <width>291</width>
-        <height>151</height>
+        <height>101</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_transect_line">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="text">
-          <string>Transect Line</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
        <item row="1" column="0">
-        <widget class="QLabel" name="label_shape_detection">
+        <widget class="QLabel" name="cpanel_label_controller">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -155,34 +126,15 @@ background:rgba(53,53,53,255)
           <string notr="true"/>
          </property>
          <property name="text">
-          <string>Shape Detection</string>
+          <string>Controller</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0">
-        <widget class="QLabel" name="label_coral_reef_health">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="text">
-          <string>Coral Reef Health</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
+          <set>Qt::AlignBottom|Qt::AlignHCenter</set>
          </property>
         </widget>
        </item>
        <item row="0" column="0">
-        <widget class="QLabel" name="label_mosaic">
+        <widget class="QLabel" name="cpanel_label_rov">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -193,38 +145,27 @@ background:rgba(53,53,53,255)
           <string notr="true"/>
          </property>
          <property name="text">
-          <string>Mosaic</string>
+          <string>ROV</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignCenter</set>
+          <set>Qt::AlignBottom|Qt::AlignHCenter</set>
          </property>
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QPushButton" name="btn_start_mosaic">
+        <widget class="QPushButton" name="cpanel_btn_connect_rov">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="text">
-          <string>Start</string>
+          <string>CONNECT</string>
          </property>
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QPushButton" name="btn_start_shape_detection">
+        <widget class="QPushButton" name="cpanel_btn_connect_controller">
          <property name="text">
-          <string>Start</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QPushButton" name="btn_start_transect_line">
-         <property name="text">
-          <string>Start</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="QPushButton" name="btn_start_coral_reef_health">
-         <property name="text">
-          <string>Start</string>
+          <string>CONNECT</string>
          </property>
         </widget>
        </item>

@@ -7,32 +7,32 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>146</height>
+    <height>291</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="control_orientation_widget" native="true">
+  <widget class="QWidget" name="cpanel_actuator_widget" native="true">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>10</y>
+     <x>50</x>
+     <y>20</y>
      <width>311</width>
-     <height>121</height>
+     <height>261</height>
     </rect>
    </property>
-   <widget class="QFrame" name="control_orientation">
+   <widget class="QFrame" name="cpanel_actuators">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
       <width>311</width>
-      <height>121</height>
+      <height>261</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QFrame#control_orientation{
+     <string notr="true">QFrame#cpanel_actuators{
 background-color:	rgba(22,22,22,255);
 }</string>
     </property>
@@ -42,7 +42,7 @@ background-color:	rgba(22,22,22,255);
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="label_control_orientation">
+    <widget class="QLabel" name="label_actuators">
      <property name="geometry">
       <rect>
        <x>80</x>
@@ -56,43 +56,43 @@ background-color:	rgba(22,22,22,255);
 font-size: 14px;</string>
      </property>
      <property name="text">
-      <string>Control Orientation</string>
+      <string>Actuators</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QFrame" name="frame_control_orientation">
+    <widget class="QFrame" name="cpanel_frame_actuators">
      <property name="geometry">
       <rect>
        <x>0</x>
        <y>30</y>
        <width>311</width>
-       <height>91</height>
+       <height>231</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">QFrame#frame_control_orientation {
+      <string notr="true">QFrame#cpanel_frame_actuators {
 background-color: rgba(34,34,34,255);
 border-radius: 20px;
 }
 QPushButton {
-background-color: rgba(63,67,66,255);
-border-radius: 21px;
+background-color: rgba(69,159,69,255);
+border-radius: 22px;
 color: rgb(255, 255, 255);
 font-size: 13px;
-width: 10px;
-height: 42px;
+width: 200px;
+height: 44px;
 }
 QPushButton:hover{
-background-color: rgba(63,67,66, 200);
+background-color: rgba(69,159,69,200);
 }
 QPushButton:pressed{
-background-color: rgba(63,67,66, 128)
+background-color: rgba(69,159,69,128);
 }
 QLabel{
 color: White;
-font-size: 14px;
+font-size: 13px;
 }</string>
      </property>
      <property name="frameShape">
@@ -101,21 +101,25 @@ font-size: 14px;
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QWidget" name="horizontalLayoutWidget">
+     <widget class="QWidget" name="gridLayoutWidget">
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>10</y>
         <width>291</width>
-        <height>71</height>
+        <height>207</height>
        </rect>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <property name="spacing">
-        <number>7</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="label_forward">
+      <layout class="QGridLayout" name="cpanel_gridLayout">
+       <item row="2" column="1">
+        <widget class="QPushButton" name="cpanel_btn_actuator_3">
+         <property name="text">
+          <string>OFF</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="cpanel_label_actuator_1">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -123,34 +127,39 @@ font-size: 14px;
           </sizepolicy>
          </property>
          <property name="styleSheet">
-          <string notr="true">color: rgba(98,119,70,255);</string>
+          <string notr="true"/>
          </property>
          <property name="text">
-          <string>Forward</string>
+          <string>Actuator 1</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignBottom|Qt::AlignHCenter</set>
          </property>
         </widget>
        </item>
-       <item>
-        <widget class="QPushButton" name="btn_toggle_control_orientation">
-         <property name="maximumSize">
-          <size>
-           <width>45</width>
-           <height>45</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="cpanel_btn_actuator_1">
          <property name="text">
-          <string/>
+          <string>OFF</string>
          </property>
         </widget>
        </item>
-       <item>
-        <widget class="QLabel" name="label_reverse">
+       <item row="1" column="1">
+        <widget class="QPushButton" name="cpanel_btn_actuator_2">
+         <property name="text">
+          <string>OFF</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="cpanel_btn_actuator_4">
+         <property name="text">
+          <string>OFF</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="cpanel_label_actuator_2">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -161,7 +170,45 @@ font-size: 14px;
           <string notr="true"/>
          </property>
          <property name="text">
-          <string>Reverse</string>
+          <string>Actuator 2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="cpanel_label_actuator_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Actuator 3</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="cpanel_label_actuator_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Actuator 4</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignBottom|Qt::AlignHCenter</set>

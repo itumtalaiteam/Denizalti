@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>217</height>
+    <height>302</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,26 +16,26 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <widget class="QWidget" name="control_sens_widget" native="true">
+  <widget class="QWidget" name="cpanel_control_sens_widget" native="true">
    <property name="geometry">
     <rect>
      <x>40</x>
      <y>20</y>
      <width>311</width>
-     <height>161</height>
+     <height>191</height>
     </rect>
    </property>
-   <widget class="QFrame" name="control_sens">
+   <widget class="QFrame" name="cpanel_control_sens">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
       <width>311</width>
-      <height>161</height>
+      <height>191</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QFrame#control_sens{
+     <string notr="true">QFrame#cpanel_control_sens{
 background-color:	rgba(22,22,22,255);
 }</string>
     </property>
@@ -45,7 +45,7 @@ background-color:	rgba(22,22,22,255);
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="label_control_sens">
+    <widget class="QLabel" name="cpanel_label_control_sens">
      <property name="geometry">
       <rect>
        <x>80</x>
@@ -65,41 +65,26 @@ font-size: 14px;</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QFrame" name="frame_control_sens">
+    <widget class="QFrame" name="cpanel_frame_control_sens">
      <property name="geometry">
       <rect>
        <x>0</x>
        <y>30</y>
        <width>311</width>
-       <height>131</height>
+       <height>161</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">QFrame#frame_control_sens {
+      <string notr="true">QFrame#cpanel_frame_control_sens {
 background-color: rgba(34,34,34,255);
 border-radius: 20px;
-}
-QPushButton {
-background-color: rgba(17, 120, 223, 255);
-border-radius: 16px;
-color: rgb(255, 255, 255);
-font-size: 13px;
-width: 100px;
-height: 32px;
-}
-QPushButton:hover{
-background-color: rgba(17, 120, 223, 200);
-}
-QPushButton:pressed{
-background-color: rgba(17, 120, 223, 128)
 }
 QLabel{
 color: White;
 font-size: 15px;
 }
-/*Slider*/
 QSlider {
-margin: 3px;
+margin: 4px;
 }
 QSlider::groove:horizontal {
 border-radius: 2px;
@@ -139,12 +124,12 @@ background: rgba(48,131,193,255);
         <x>10</x>
         <y>10</y>
         <width>91</width>
-        <height>111</height>
+        <height>141</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QLabel" name="label_joystick">
+        <widget class="QLabel" name="cpanel_label_joystick">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -163,7 +148,7 @@ background: rgba(48,131,193,255);
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_yaw">
+        <widget class="QLabel" name="cpanel_label_yaw">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -189,19 +174,25 @@ background: rgba(48,131,193,255);
         <x>110</x>
         <y>10</y>
         <width>181</width>
-        <height>133</height>
+        <height>137</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
        <item row="0" column="0">
         <layout class="QVBoxLayout" name="verticalLayout_2">
          <item>
-          <widget class="QSlider" name="slider_joystick">
+          <widget class="QSlider" name="cpanel_slider_joystick">
            <property name="styleSheet">
             <string notr="true"/>
            </property>
            <property name="maximum">
             <number>2</number>
+           </property>
+           <property name="value">
+            <number>1</number>
            </property>
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
@@ -217,7 +208,7 @@ background: rgba(48,131,193,255);
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_2">
            <item>
-            <widget class="QLabel" name="label_joystick_low">
+            <widget class="QLabel" name="cpanel_label_joystick_low">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -236,7 +227,7 @@ background: rgba(48,131,193,255);
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="label_joystick_normal">
+            <widget class="QLabel" name="cpanel_label_joystick_normal">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -244,7 +235,7 @@ background: rgba(48,131,193,255);
               </sizepolicy>
              </property>
              <property name="styleSheet">
-              <string notr="true"/>
+              <string notr="true">color: rgba(80,120,65,255);</string>
              </property>
              <property name="text">
               <string>Normal</string>
@@ -255,7 +246,7 @@ background: rgba(48,131,193,255);
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="label_joystick_high">
+            <widget class="QLabel" name="cpanel_label_joystick_high">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -280,12 +271,21 @@ background: rgba(48,131,193,255);
        <item row="1" column="0">
         <layout class="QVBoxLayout" name="verticalLayout_4">
          <item>
-          <widget class="QSlider" name="slider_yaw">
+          <widget class="QSlider" name="cpanel_slider_yaw">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
            <property name="maximum">
             <number>2</number>
+           </property>
+           <property name="value">
+            <number>1</number>
            </property>
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
@@ -301,7 +301,7 @@ background: rgba(48,131,193,255);
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout">
            <item>
-            <widget class="QLabel" name="label_yaw_low">
+            <widget class="QLabel" name="cpanel_label_yaw_low">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -320,7 +320,7 @@ background: rgba(48,131,193,255);
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="label_yaw_normal">
+            <widget class="QLabel" name="cpanel_label_yaw_normal">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -328,7 +328,7 @@ background: rgba(48,131,193,255);
               </sizepolicy>
              </property>
              <property name="styleSheet">
-              <string notr="true"/>
+              <string notr="true">color: rgba(80,120,65,255);</string>
              </property>
              <property name="text">
               <string>Normal</string>
@@ -339,7 +339,7 @@ background: rgba(48,131,193,255);
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="label_yaw_high">
+            <widget class="QLabel" name="cpanel_label_yaw_high">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
                <horstretch>0</horstretch>

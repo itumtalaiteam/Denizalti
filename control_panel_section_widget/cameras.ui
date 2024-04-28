@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>395</width>
+    <height>279</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="cpanel_camera_widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>311</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <widget class="QFrame" name="cpanel_cameras">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>311</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#cpanel_cameras{
+background-color:	rgba(22,22,22,255);
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="cpanel_label_cameras">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>0</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:White;
+font-size: 14px;</string>
+     </property>
+     <property name="text">
+      <string>Cameras</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QFrame" name="cpanel_frame_cameras">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>311</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#cpanel_frame_cameras {
+background-color: rgba(34,34,34,255);
+border-radius: 20px;
+}
+QPushButton {
+background-color: rgba(17, 120, 223, 255);
+border-radius: 16px;
+color: rgb(255, 255, 255);
+font-size: 13px;
+width: 100px;
+height: 32px;
+}
+QPushButton:hover{
+background-color: rgba(17, 120, 223, 200);
+}
+QPushButton:pressed{
+background-color: rgba(17, 120, 223, 128)
+}
+QLabel{
+color: White;
+font-size: 13px;
+}
+QComboBox {
+border-radius: 15px;
+color: White;
+background-color: rgba(53,53,53,255);
+height:30;
+}
+QComboBox:hover{
+background-color: rgba(53,53,53,200);
+}
+QComboBox:pressed{
+background-color: rgba(53,53,53,128);
+}
+QComboBox:on {
+background-color: rgba(53,53,53,255);
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+QComboBox QAbstractItemView {
+background: rgba(53,53,53,255);
+color: White;
+border: none;
+selection-background-color: rgba(17, 120, 223, 255);
+outline: 0px;
+}
+QComboBox::drop-down {
+border-color: transparent;
+background-color: transparent;
+image: url(images/white_down_arrow.png);
+width: 14px;
+height: 14px;
+padding-right: 9px;
+padding-top: 9px;
+}
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>17</y>
+        <width>291</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="spacing">
+        <number>7</number>
+       </property>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="cpanel_btn_camera2_1">
+         <property name="text">
+          <string>2nd - 1 </string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../pyqt/images/white_camera.png</normaloff>../../pyqt/images/white_camera.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="cpanel_abel_en_dis">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Enable/Disable</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QComboBox" name="cpanel_cbox_resol_4">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <item>
+          <property name="text">
+           <string>640 x 360</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>640 x 480</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1280 x 720</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1920 x 1080</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="cpanel_cbox_resol_2">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <item>
+          <property name="text">
+           <string>640 x 360</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>640 x 480</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1280 x 720</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1920 x 1080</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="cpanel_btn_camera2_2">
+         <property name="text">
+          <string>2nd - 2</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../pyqt/images/white_camera.png</normaloff>../../pyqt/images/white_camera.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="cpanel_btn_camera2_3">
+         <property name="text">
+          <string>2nd - 3</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../pyqt/images/white_camera.png</normaloff>../../pyqt/images/white_camera.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="cpanel_label_resol">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Resolution</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="cpanel_btn_camera1">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>1st       </string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../pyqt/images/white_camera.png</normaloff>../../pyqt/images/white_camera.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="cpanel_cbox_resol_3">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <item>
+          <property name="text">
+           <string>640 x 360</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>640 x 480</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1280 x 720</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1920 x 1080</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="cpanel_cbox_resol_1">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <item>
+          <property name="text">
+           <string>640 x 360</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>640 x 480</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1280 x 720</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1920 x 1080</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
