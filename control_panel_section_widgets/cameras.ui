@@ -158,7 +158,7 @@ padding-top: 9px;
          </property>
          <property name="icon">
           <iconset>
-           <normaloff>../../../Belgeler/GitHub/Denizalti/images/white_camera.png</normaloff>../../../Belgeler/GitHub/Denizalti/images/white_camera.png</iconset>
+           <normaloff>../images/white_camera.png</normaloff>../images/white_camera.png</iconset>
          </property>
         </widget>
        </item>
@@ -242,7 +242,7 @@ padding-top: 9px;
          </property>
          <property name="icon">
           <iconset>
-           <normaloff>../../../Belgeler/GitHub/Denizalti/images/white_camera.png</normaloff>../../../Belgeler/GitHub/Denizalti/images/white_camera.png</iconset>
+           <normaloff>../images/white_camera.png</normaloff>../images/white_camera.png</iconset>
          </property>
         </widget>
        </item>
@@ -253,7 +253,7 @@ padding-top: 9px;
          </property>
          <property name="icon">
           <iconset>
-           <normaloff>../../../Belgeler/GitHub/Denizalti/images/white_camera.png</normaloff>../../../Belgeler/GitHub/Denizalti/images/white_camera.png</iconset>
+           <normaloff>../images/white_camera.png</normaloff>../images/white_camera.png</iconset>
          </property>
         </widget>
        </item>
@@ -286,7 +286,7 @@ padding-top: 9px;
          </property>
          <property name="icon">
           <iconset>
-           <normaloff>../../../Belgeler/GitHub/Denizalti/images/white_camera.png</normaloff>../../../Belgeler/GitHub/Denizalti/images/white_camera.png</iconset>
+           <normaloff>../images/white_camera.png</normaloff>../images/white_camera.png</iconset>
          </property>
          <property name="iconSize">
           <size>
