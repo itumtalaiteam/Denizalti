@@ -1,0 +1,1846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>421</width>
+    <height>839</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="config_thruster_config_widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>391</width>
+     <height>721</height>
+    </rect>
+   </property>
+   <widget class="QFrame" name="config_thruster_config">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>391</width>
+      <height>721</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#config_thruster_config{
+background-color:	rgba(22,22,22,255);
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="config_label_thruster_config">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:White;
+font-size: 14px;</string>
+     </property>
+     <property name="text">
+      <string>Thruster Configuration</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QFrame" name="config_frame_thruster_config">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>391</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#config_frame_thruster_config {
+background-color: rgba(34,34,34,255);
+border-radius: 20px;
+}
+QPushButton {
+background-color: rgba(63,67,66,255);
+border-radius: 21px;
+color: rgb(255, 255, 255);
+font-size: 13px;
+width: 100px;
+height: 42px;
+}
+QPushButton:hover{
+background-color: rgba(63,67,66,200);
+}
+QPushButton:pressed{
+background-color: rgba(63,67,66,128);
+}
+
+QLabel{
+color: White;
+font-size: 13px;
+}
+
+QCheckBox{
+color: White;
+}
+QCheckBox::indicator{
+border: 1px solid Black;
+background-color: rgba(54,54,54,255);
+}
+QCheckBox::indicator:unchecked:hover{
+border: 1px solid rgb(200,200,200);
+}
+QCheckBox::indicator:unchecked:pressed{
+background-color: rgba(70,70,70,255);
+}
+QCheckBox::indicator:checked:hover{
+border: 1px solid rgb(180,180,180);
+}
+QCheckBox::indicator:checked:pressed{
+background-color: rgba(70,70,70,255);
+}
+QCheckBox::indicator:checked {
+image: url(images/white_checkmark1);
+}
+
+QScrollArea{
+border: none;
+}
+QScrollBar:vertical {
+background:rgba(22,22,22,225);
+width:12px;  
+border-radius: 6px; 
+margin: 0px 0px 0px 0px; 
+border: 0px solid black;
+}
+QScrollBar::handle:vertical {         
+min-height: 0px;
+border-radius: 5px;
+background-color: rgba(66,66,66,255);
+border: 0px solid black;
+}
+QScrollBar::add-line:vertical {       
+height: 0px;
+subcontrol-position: bottom;
+subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+height: 0 px;
+subcontrol-position: bottom;
+subcontrol-origin: margin;
+}
+QScrollBar::sub-page:vertical {
+background: none;
+}
+QScrollBar::add-page:vertical {
+background: none;
+}
+
+QSlider {
+margin: 4px;
+}
+QSlider::groove:horizontal {
+border-radius: 2px;
+height: 4px;
+margin: 0px;
+}
+QSlider::handle:horizontal {
+border: none;
+height: 30px;
+width:10px;
+margin: -3px;
+border-radius: 0px;
+background-color: rgba(89,89,89,255);
+}
+QSlider::handle:horizontal:hover {
+background-color: rgba(85,85,85,255);
+}
+QSlider::handle:horizontal:pressed {
+background-color: rgba(80,80,80,255);
+}
+QSlider::add-page:horizontal {
+background: rgba(60,60,60,255);
+}
+QSlider::sub-page:horizontal {
+background: rgba(48,131,193,255);
+}
+
+QComboBox {
+border-radius: 15px;
+color: White;
+background-color: rgba(53,53,53,255);
+height:30;
+}
+QComboBox:hover{
+background-color: rgba(53,53,53,200);
+}
+QComboBox:pressed{
+background-color: rgba(53,53,53,128);
+}
+QComboBox:on {
+background-color: rgba(53,53,53,255);
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+QComboBox QAbstractItemView {
+background: rgba(53,53,53,255);
+color: White;
+border: none;
+selection-background-color: rgba(17, 120, 223, 255);
+outline: 0px;
+}
+QComboBox::drop-down {
+border-color: transparent;
+background-color: transparent;
+image: url(images/white_down_arrow.png);
+width: 14px;
+height: 14px;
+padding-right: 9px;
+padding-top: 9px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>371</width>
+        <height>671</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="config_qwidget_thruster_config">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-16</y>
+         <width>359</width>
+         <height>1000</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget#config_qwidget_thruster_config{
+background-color:rgba(34,34,34,255);
+}</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>1000</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>355</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QWidget" name="verticalLayoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>356</width>
+             <height>986</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <property name="spacing">
+             <number>7</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="config_label_test_speed">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Test Speed</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="buddy">
+                 <cstring>config_label_test_speed</cstring>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSlider" name="config_slider_test_speed">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>156</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>230</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="singleStep">
+                 <number>1</number>
+                </property>
+                <property name="value">
+                 <number>9</number>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="config_label_percent_test_speed">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>%10</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QLabel" name="config_label_thruster_1">
+                <property name="minimumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:rgba(0,87,156,255);
+border-radius:20px;
+font-size: 14px;</string>
+                </property>
+                <property name="text">
+                 <string>Thruster 1</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="config_frame_thruster_1">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>245</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame#config_frame_thruster_1{
+background-color: rgba(40,40,40,255);
+border-radius: 20px;
+}
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QWidget" name="gridLayoutWidget_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>231</width>
+                   <height>92</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_5">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_location_1">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Rov Location</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QComboBox" name="config_cbox_thruster_rov_location_1">
+                    <item>
+                     <property name="text">
+                      <string>A</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>B</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>C</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>D</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>E</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>F</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>G</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>H</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QCheckBox" name="config_checkbox_thruster_reversed_1">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_reversed_1">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Reversed</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QPushButton" name="config_btn_thruster_test_1">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border-radius: 15px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Test</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QLabel" name="config_label_thruster_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:rgba(0,87,156,255);
+border-radius:20px;
+font-size: 14px;</string>
+                </property>
+                <property name="text">
+                 <string>Thruster 2</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="config_frame_thruster_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>245</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame#config_frame_thruster_2{
+background-color: rgba(40,40,40,255);
+border-radius: 20px;
+}
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QWidget" name="gridLayoutWidget_6">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>231</width>
+                   <height>92</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_6">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_location_2">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Rov Location</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QComboBox" name="config_cbox_thruster_rov_location_2">
+                    <item>
+                     <property name="text">
+                      <string>A</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>B</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>C</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>D</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>E</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>F</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>G</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>H</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QCheckBox" name="config_checkbox_thruster_reversed_2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_reversed_2">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Reversed</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QPushButton" name="config_btn_thruster_test_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border-radius: 15px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Test</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QLabel" name="config_label_thruster_3">
+                <property name="minimumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:rgba(0,87,156,255);
+border-radius:20px;
+font-size: 14px;</string>
+                </property>
+                <property name="text">
+                 <string>Thruster 3</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="config_frame_thruster_5">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>245</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame#config_frame_thruster_5{
+background-color: rgba(40,40,40,255);
+border-radius: 20px;
+}
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QWidget" name="gridLayoutWidget_7">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>231</width>
+                   <height>92</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_7">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_location_3">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Rov Location</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QComboBox" name="config_cbox_thruster_rov_location_3">
+                    <item>
+                     <property name="text">
+                      <string>A</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>B</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>C</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>D</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>E</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>F</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>G</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>H</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QCheckBox" name="config_checkbox_thruster_reversed_3">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_reversed_3">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Reversed</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QPushButton" name="config_btn_thruster_test_3">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border-radius: 15px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Test</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QLabel" name="config_label_thruster_4">
+                <property name="minimumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:rgba(0,87,156,255);
+border-radius:20px;
+font-size: 14px;</string>
+                </property>
+                <property name="text">
+                 <string>Thruster 4</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="config_frame_thruster_6">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>245</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame#config_frame_thruster_6{
+background-color: rgba(40,40,40,255);
+border-radius: 20px;
+}
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QWidget" name="gridLayoutWidget_8">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>231</width>
+                   <height>92</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_8">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_location_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Rov Location</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QComboBox" name="config_cbox_thruster_rov_location_4">
+                    <item>
+                     <property name="text">
+                      <string>A</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>B</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>C</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>D</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>E</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>F</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>G</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>H</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QCheckBox" name="config_checkbox_thruster_reversed_4">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_reversed_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Reversed</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QPushButton" name="config_btn_thruster_test_4">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border-radius: 15px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Test</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <item>
+               <widget class="QLabel" name="config_label_thruster_5">
+                <property name="minimumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:rgba(0,87,156,255);
+border-radius:20px;
+font-size: 14px;</string>
+                </property>
+                <property name="text">
+                 <string>Thruster 5</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="config_frame_thruster_7">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>245</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame#config_frame_thruster_7{
+background-color: rgba(40,40,40,255);
+border-radius: 20px;
+}
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QWidget" name="gridLayoutWidget_9">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>231</width>
+                   <height>92</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_9">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_location_5">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Rov Location</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QComboBox" name="config_cbox_thruster_rov_location_5">
+                    <item>
+                     <property name="text">
+                      <string>A</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>B</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>C</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>D</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>E</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>F</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>G</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>H</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QCheckBox" name="config_checkbox_thruster_reversed_5">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_reversed_5">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Reversed</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QPushButton" name="config_btn_thruster_test_5">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border-radius: 15px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Test</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <item>
+               <widget class="QLabel" name="config_label_thruster_6">
+                <property name="minimumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:rgba(0,87,156,255);
+border-radius:20px;
+font-size: 14px;</string>
+                </property>
+                <property name="text">
+                 <string>Thruster 6</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="config_frame_thruster_8">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>245</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame#config_frame_thruster_8{
+background-color: rgba(40,40,40,255);
+border-radius: 20px;
+}
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QWidget" name="gridLayoutWidget_10">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>231</width>
+                   <height>92</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_10">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_location_6">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Rov Location</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QComboBox" name="config_cbox_thruster_rov_location_6">
+                    <item>
+                     <property name="text">
+                      <string>A</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>B</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>C</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>D</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>E</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>F</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>G</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>H</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QCheckBox" name="config_checkbox_thruster_reversed_6">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_reversed_6">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Reversed</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QPushButton" name="config_btn_thruster_test_6">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border-radius: 15px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Test</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <item>
+               <widget class="QLabel" name="config_label_thruster_7">
+                <property name="minimumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:rgba(0,87,156,255);
+border-radius:20px;
+font-size: 14px;</string>
+                </property>
+                <property name="text">
+                 <string>Thruster 7</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="config_frame_thruster_9">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>245</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame#config_frame_thruster_9{
+background-color: rgba(40,40,40,255);
+border-radius: 20px;
+}
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QWidget" name="gridLayoutWidget_11">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>231</width>
+                   <height>92</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_11">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_location_7">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Rov Location</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QComboBox" name="config_cbox_thruster_rov_location_7">
+                    <item>
+                     <property name="text">
+                      <string>A</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>B</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>C</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>D</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>E</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>F</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>G</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>H</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QCheckBox" name="config_checkbox_thruster_reversed_7">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_reversed_7">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Reversed</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QPushButton" name="config_btn_thruster_test_7">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border-radius: 15px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Test</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_12">
+              <item>
+               <widget class="QLabel" name="config_label_thruster_8">
+                <property name="minimumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>95</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:rgba(0,87,156,255);
+border-radius:20px;
+font-size: 14px;</string>
+                </property>
+                <property name="text">
+                 <string>Thruster 8</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="config_frame_thruster_10">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>245</width>
+                  <height>110</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame#config_frame_thruster_10{
+background-color: rgba(40,40,40,255);
+border-radius: 20px;
+}
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QWidget" name="gridLayoutWidget_12">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>231</width>
+                   <height>92</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_12">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_location_8">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Rov Location</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QComboBox" name="config_cbox_thruster_rov_location_8">
+                    <item>
+                     <property name="text">
+                      <string>A</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>B</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>C</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>D</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>E</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>F</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>G</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>H</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QCheckBox" name="config_checkbox_thruster_reversed_8">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="config_label_thruster_rov_reversed_8">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>Reversed</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buddy">
+                     <cstring>config_label_test_speed</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QPushButton" name="config_btn_thruster_test_8">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border-radius: 15px;</string>
+                    </property>
+                    <property name="text">
+                     <string>Test</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

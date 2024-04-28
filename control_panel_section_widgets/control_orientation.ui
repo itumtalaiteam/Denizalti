@@ -149,7 +149,7 @@ font-size: 14px;
          </property>
          <property name="icon">
           <iconset>
-           <normaloff>../../pyqt/images/up_down_arrows.png</normaloff>../../pyqt/images/up_down_arrows.png</iconset>
+           <normaloff>../../../Belgeler/GitHub/Denizalti/images/up_down_arrows.png</normaloff>../../../Belgeler/GitHub/Denizalti/images/up_down_arrows.png</iconset>
          </property>
          <property name="iconSize">
           <size>

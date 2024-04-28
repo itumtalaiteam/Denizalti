@@ -13,12 +13,12 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="com_config_widget" native="true">
+  <widget class="QWidget" name="config_com_config_widget" native="true">
    <property name="geometry">
     <rect>
      <x>30</x>
      <y>10</y>
-     <width>381</width>
+     <width>391</width>
      <height>721</height>
     </rect>
    </property>
@@ -27,7 +27,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>381</width>
+      <width>391</width>
       <height>721</height>
      </rect>
     </property>
@@ -42,7 +42,7 @@ background-color:	rgba(22,22,22,255);
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="label_cameras">
+    <widget class="QLabel" name="config_label_com_config">
      <property name="geometry">
       <rect>
        <x>100</x>
@@ -67,7 +67,7 @@ font-size: 14px;</string>
       <rect>
        <x>0</x>
        <y>30</y>
-       <width>381</width>
+       <width>391</width>
        <height>691</height>
       </rect>
      </property>
@@ -114,7 +114,45 @@ QCheckBox::indicator:checked:pressed{
 background-color: rgba(70,70,70,255);
 }
 QCheckBox::indicator:checked {
-image: url(images/white_checkmark1);
+image: url(images/white_checkmark);
+}
+
+QScrollArea{
+border: none;
+}
+QScrollBar:vertical {
+background:rgba(22,22,22,225);
+width:12px;  
+border-radius: 6px; 
+margin: 0px 0px 0px 0px; 
+border: 0px solid black;
+}
+QScrollBar::handle:vertical {         
+min-height: 0px;
+border-radius: 5px;
+background-color: rgba(66,66,66,255);
+border: 0px solid black;
+}
+QScrollBar::add-line:vertical {       
+height: 0px;
+subcontrol-position: bottom;
+subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+height: 0 px;
+subcontrol-position: bottom;
+subcontrol-origin: margin;
+}
+QScrollBar::sub-page:vertical {
+background: none;
+}
+QScrollBar::add-page:vertical {
+background: none;
+}
+QTextEdit{
+background-color: rgba(52,52,52,255);
+border: none;
+color: White;
 }</string>
      </property>
      <property name="frameShape">
@@ -128,13 +166,13 @@ image: url(images/white_checkmark1);
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>361</width>
+        <width>371</width>
         <height>93</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="0">
-        <widget class="QLabel" name="label_rov">
+        <widget class="QLabel" name="config_label_rov">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -153,7 +191,7 @@ image: url(images/white_checkmark1);
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QLabel" name="label_controller">
+        <widget class="QLabel" name="config_label_controller">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -172,7 +210,7 @@ image: url(images/white_checkmark1);
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QPushButton" name="btn_connect_rov">
+        <widget class="QPushButton" name="config_btn_connect_rov">
          <property name="styleSheet">
           <string notr="true"/>
          </property>
@@ -182,7 +220,7 @@ image: url(images/white_checkmark1);
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QPushButton" name="btn_connect_controller">
+        <widget class="QPushButton" name="config_btn_connect_controller">
          <property name="text">
           <string>CONNECT</string>
          </property>
@@ -195,13 +233,13 @@ image: url(images/white_checkmark1);
        <rect>
         <x>10</x>
         <y>110</y>
-        <width>361</width>
+        <width>371</width>
         <height>104</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="0" column="1">
-        <widget class="QComboBox" name="comboBox">
+        <widget class="QComboBox" name="config_cbox_com_port">
          <property name="styleSheet">
           <string notr="true">QComboBox {
 border-radius: 15px;
@@ -239,17 +277,17 @@ padding-top: 9px;
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QCheckBox" name="checkBox">
+        <widget class="QCheckBox" name="config_checkbox_auto_connect">
          <property name="styleSheet">
           <string notr="true"/>
          </property>
          <property name="text">
-          <string>CheckBox</string>
+          <string>Auto-Connect</string>
          </property>
         </widget>
        </item>
        <item row="0" column="0">
-        <widget class="QLabel" name="label_controller_2">
+        <widget class="QLabel" name="config_label_com_port">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -268,17 +306,17 @@ padding-top: 9px;
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="config_btn_find_com_parts">
          <property name="styleSheet">
           <string notr="true">QPushButton{
 height:30px;
 border-radius:15px;
 }
 QPushButton:hover{
-background-color: rgba(63,67,66,180);
+background-color: rgba(63,67,66,200);
 }
 QPushButton:pressed{
-background-color: rgba(63,67,66,120);
+background-color: rgba(63,67,66,128);
 }</string>
          </property>
          <property name="text">
@@ -288,35 +326,71 @@ background-color: rgba(63,67,66,120);
        </item>
       </layout>
      </widget>
-     <widget class="QScrollArea" name="scrollArea">
+     <widget class="QScrollArea" name="config_com_config_scrollarea">
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>220</y>
-        <width>280</width>
-        <height>216</height>
+        <width>371</width>
+        <height>461</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="widgetResizable">
        <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignJustify</set>
       </property>
       <widget class="QWidget" name="scrollAreaWidgetContents">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>257</width>
-         <height>1222</height>
+         <width>359</width>
+         <height>700</height>
         </rect>
        </property>
-       <layout class="QGridLayout" name="gridLayout_3">
-        <item row="0" column="0">
-         <widget class="QTextEdit" name="textEdit">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QTextEdit" name="config_textedit_log_com_config">
           <property name="minimumSize">
            <size>
             <width>0</width>
-            <height>1200</height>
+            <height>700</height>
            </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
           </property>
          </widget>
         </item>
