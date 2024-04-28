@@ -16,56 +16,43 @@
   <widget class="QWidget" name="cpanel_sec_cam_feed_widget" native="true">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>50</y>
-     <width>381</width>
-     <height>281</height>
+     <x>20</x>
+     <y>10</y>
+     <width>391</width>
+     <height>311</height>
     </rect>
    </property>
-   <widget class="QFrame" name="cpanel_sec_cam_feed_1">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>381</width>
-      <height>281</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QFrame#cpanel_sec_cam_feed_1{
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QFrame" name="cpanel_sec_cam_feed_1">
+      <property name="styleSheet">
+       <string notr="true">QFrame#cpanel_sec_cam_feed_1{
 background-color:	rgba(22,22,22,255);
 }</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <widget class="QWidget" name="horizontalLayoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>0</y>
-       <width>221</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QLabel" name="cpanel_label_cam_feed">
-        <property name="styleSheet">
-         <string notr="true">color:White;</string>
-        </property>
-        <property name="text">
-         <string>Secondary Feed 1:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QComboBox" name="cpanel_cbox_select_cam">
-        <property name="styleSheet">
-         <string notr="true">QComboBox {
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="cpanel_label_cam_feed">
+           <property name="styleSheet">
+            <string notr="true">color:White;</string>
+           </property>
+           <property name="text">
+            <string>Secondary Feed 1:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="cpanel_cbox_select_cam">
+           <property name="styleSheet">
+            <string notr="true">QComboBox {
 border-radius: 15px;
 color: White;
 background-color: rgba(53,53,53,255);
@@ -98,63 +85,62 @@ height: 14px;
 padding-right: 9px;
 padding-top: 9px;
 }</string>
-        </property>
-        <item>
-         <property name="text">
-          <string>Camera 1</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Camera2</string>
-         </property>
-        </item>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QFrame" name="cpanel_frame_sec_cam_feed_1">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>40</y>
-       <width>381</width>
-       <height>241</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QFrame#cpanel_frame_sec_cam_feed_1 {
+           </property>
+           <item>
+            <property name="text">
+             <string>Camera 1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Camera2</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QFrame" name="cpanel_frame_sec_cam_feed_1">
+         <property name="styleSheet">
+          <string notr="true">QFrame#cpanel_frame_sec_cam_feed_1 {
 background-color: rgba(34,34,34,255);
 border-radius: 20px;
 }</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <widget class="QLabel" name="cpanel_label_output_cam">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>381</width>
-        <height>241</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>nosignal.JPG</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="cpanel_label_output_cam">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>nosignal.JPG</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
      </widget>
-    </widget>
-   </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

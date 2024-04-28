@@ -85,6 +85,7 @@ border-radius: 20px;
 QLineEdit{
 background-color: rgba(52,52,52,255);
 border: 1px solid black;
+color:rgba(0,255,0,255)
 }
 
 QLabel{
@@ -104,7 +105,7 @@ font-size: 13px;
         <x>10</x>
         <y>18</y>
         <width>291</width>
-        <height>111</height>
+        <height>112</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout">
@@ -112,6 +113,9 @@ font-size: 13px;
         <widget class="QLineEdit" name="cpanel_ledit_yaw">
          <property name="styleSheet">
           <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>12</string>
          </property>
          <property name="readOnly">
           <bool>true</bool>
@@ -122,6 +126,9 @@ font-size: 13px;
         <widget class="QLineEdit" name="cpanel_ledit_depth">
          <property name="styleSheet">
           <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>23</string>
          </property>
          <property name="readOnly">
           <bool>true</bool>
@@ -155,6 +162,9 @@ font-size: 13px;
          <property name="styleSheet">
           <string notr="true"/>
          </property>
+         <property name="text">
+          <string>12</string>
+         </property>
          <property name="readOnly">
           <bool>true</bool>
          </property>
@@ -164,6 +174,9 @@ font-size: 13px;
         <widget class="QLineEdit" name="cpanel_ledit_pitch">
          <property name="styleSheet">
           <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>2</string>
          </property>
          <property name="readOnly">
           <bool>true</bool>
