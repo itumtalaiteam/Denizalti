@@ -6,73 +6,55 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>565</width>
-    <height>816</height>
+    <width>517</width>
+    <height>831</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="config_rov_visualisation_widget" native="true">
-   <property name="geometry">
-    <rect>
-     <x>90</x>
-     <y>30</y>
-     <width>391</width>
-     <height>721</height>
-    </rect>
-   </property>
-   <widget class="QFrame" name="config_rov_visualisation">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>391</width>
-      <height>721</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QFrame#config_com_config{
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QWidget" name="config_rov_visualisation_widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QFrame" name="config_rov_visualisation">
+        <property name="styleSheet">
+         <string notr="true">QFrame#config_rov_visualisation{
 background-color:	rgba(22,22,22,255);
 }</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <widget class="QLabel" name="config_label_rov_visualisation">
-     <property name="geometry">
-      <rect>
-       <x>100</x>
-       <y>0</y>
-       <width>191</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color:White;
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="config_label_rov_visualisation">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:White;
 font-size: 14px;</string>
-     </property>
-     <property name="text">
-      <string>ROV Visualisation</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QFrame" name="config_frame_rov_visualisation">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>30</y>
-       <width>391</width>
-       <height>691</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QFrame#config_frame_com_config {
+           </property>
+           <property name="text">
+            <string>ROV Visualisation</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="config_frame_rov_visualisation">
+           <property name="styleSheet">
+            <string notr="true">QFrame#config_frame_rov_visualisation {
 background-color: rgba(34,34,34,255);
 border-radius: 20px;
 }
@@ -154,16 +136,22 @@ background-color: rgba(52,52,52,255);
 border: none;
 color: White;
 }</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
     </widget>
-   </widget>
-  </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

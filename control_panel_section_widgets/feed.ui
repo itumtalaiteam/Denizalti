@@ -7,52 +7,58 @@
     <x>0</x>
     <y>0</y>
     <width>468</width>
-    <height>384</height>
+    <height>377</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="cpanel_sec_cam_feed_widget" native="true">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>10</y>
-     <width>391</width>
-     <height>311</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout_2">
-    <item>
-     <widget class="QFrame" name="cpanel_sec_cam_feed_1">
-      <property name="styleSheet">
-       <string notr="true">QFrame#cpanel_sec_cam_feed_1{
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <widget class="QWidget" name="cpanel_sec_cam_feed_widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QFrame" name="cpanel_sec_cam_feed_1">
+        <property name="styleSheet">
+         <string notr="true">QFrame#cpanel_sec_cam_feed_1{
 background-color:	rgba(22,22,22,255);
 }</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout">
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
          <item>
-          <widget class="QLabel" name="cpanel_label_cam_feed">
-           <property name="styleSheet">
-            <string notr="true">color:White;</string>
+          <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
+           <property name="spacing">
+            <number>7</number>
            </property>
-           <property name="text">
-            <string>Secondary Feed 1:</string>
+           <property name="leftMargin">
+            <number>0</number>
            </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="cpanel_cbox_select_cam">
-           <property name="styleSheet">
-            <string notr="true">QComboBox {
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="cpanel_label_cam_feed">
+             <property name="styleSheet">
+              <string notr="true">color:White;</string>
+             </property>
+             <property name="text">
+              <string>Secondary Feed 1:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="cpanel_cbox_select_cam">
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
 border-radius: 15px;
 color: White;
 background-color: rgba(53,53,53,255);
@@ -85,63 +91,65 @@ height: 14px;
 padding-right: 9px;
 padding-top: 9px;
 }</string>
-           </property>
-           <item>
-            <property name="text">
-             <string>Camera 1</string>
-            </property>
+             </property>
+             <item>
+              <property name="text">
+               <string>Camera 1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Camera2</string>
+              </property>
+             </item>
+            </widget>
            </item>
-           <item>
-            <property name="text">
-             <string>Camera2</string>
-            </property>
-           </item>
-          </widget>
+          </layout>
          </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QFrame" name="cpanel_frame_sec_cam_feed_1">
-         <property name="styleSheet">
-          <string notr="true">QFrame#cpanel_frame_sec_cam_feed_1 {
+         <item>
+          <widget class="QFrame" name="cpanel_frame_sec_cam_feed_1">
+           <property name="styleSheet">
+            <string notr="true">QFrame#cpanel_frame_sec_cam_feed_1 {
 background-color: rgba(34,34,34,255);
 border-radius: 20px;
 }</string>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
-          <item>
-           <widget class="QLabel" name="cpanel_label_output_cam">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="pixmap">
-             <pixmap>../../../../Downloads/nosignal.JPG</pixmap>
-            </property>
-            <property name="scaledContents">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-   </layout>
-  </widget>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="cpanel_label_output_cam">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>../../../../Downloads/nosignal.JPG</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>
