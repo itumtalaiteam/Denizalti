@@ -137,8 +137,8 @@ padding-top: 9px;
                 </property>
                </widget>
               </item>
-              <item row="0" column="0">
-               <widget class="QLabel" name="cpanel_abel_en_dis">
+              <item row="0" column="1">
+               <widget class="QLabel" name="cpanel_label_resol">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -149,7 +149,7 @@ padding-top: 9px;
                  <string notr="true"/>
                 </property>
                 <property name="text">
-                 <string>Enable/Disable</string>
+                 <string>Resolution</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -181,6 +181,83 @@ padding-top: 9px;
                   <string>1920 x 1080</string>
                  </property>
                 </item>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QPushButton" name="cpanel_btn_camera2_3">
+                <property name="text">
+                 <string>2nd - 3</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>../images/white_camera.png</normaloff>../images/white_camera.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QComboBox" name="cpanel_cbox_resol_3">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>640 x 360</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>640 x 480</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1280 x 720</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1920 x 1080</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="cpanel_abel_en_dis">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>Enable/Disable</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QPushButton" name="cpanel_btn_camera1">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>1st       </string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>../images/white_camera.png</normaloff>../images/white_camera.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
                </widget>
               </item>
               <item row="2" column="1">
@@ -221,83 +298,6 @@ padding-top: 9px;
                 </property>
                </widget>
               </item>
-              <item row="4" column="0">
-               <widget class="QPushButton" name="cpanel_btn_camera2_3">
-                <property name="text">
-                 <string>2nd - 3</string>
-                </property>
-                <property name="icon">
-                 <iconset>
-                  <normaloff>../images/white_camera.png</normaloff>../images/white_camera.png</iconset>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="1">
-               <widget class="QLabel" name="cpanel_label_resol">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="text">
-                 <string>Resolution</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0">
-               <widget class="QPushButton" name="cpanel_btn_camera1">
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="text">
-                 <string>1st       </string>
-                </property>
-                <property name="icon">
-                 <iconset>
-                  <normaloff>../images/white_camera.png</normaloff>../images/white_camera.png</iconset>
-                </property>
-                <property name="iconSize">
-                 <size>
-                  <width>20</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="1">
-               <widget class="QComboBox" name="cpanel_cbox_resol_3">
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <item>
-                 <property name="text">
-                  <string>640 x 360</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>640 x 480</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>1280 x 720</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>1920 x 1080</string>
-                 </property>
-                </item>
-               </widget>
-              </item>
               <item row="1" column="1">
                <widget class="QComboBox" name="cpanel_cbox_resol_1">
                 <property name="styleSheet">
@@ -327,21 +327,21 @@ padding-top: 9px;
               </item>
              </layout>
             </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
            </layout>
           </widget>
-         </item>
-         <item>
-          <spacer name="verticalSpacer">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
          </item>
         </layout>
        </widget>

@@ -111,7 +111,6 @@ padding-top: 9px;
            <property name="styleSheet">
             <string notr="true">QFrame#cpanel_frame_sec_cam_feed_1 {
 background-color: rgba(34,34,34,255);
-border-radius: 20px;
 }</string>
            </property>
            <property name="frameShape">
